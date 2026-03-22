@@ -535,17 +535,22 @@ body {
 /* Video Section */
 .video-container {
     width: 100%;
-    aspect-ratio: 16 / 9;   /* ← これが神 */
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
     overflow: hidden;
     border-radius: 12px;
     background: #000;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.1);
 }
 
 .video-container iframe {
+    display: block;
     width: 100%;
     height: 100%;
-    border: none;
+    border: 0;
 }
+
 
 /* Links Section */
 .links-section {
