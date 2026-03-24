@@ -510,75 +510,7 @@ body {
     margin-top: 4px;
 }
 
-/* Marshmallow Section */
-.marshmallow-section {
-    text-align: center;
-}
 
-.marshmallow-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 22px;
-    position: relative;
-    z-index: 1;
-}
-
-.marshmallow-text {
-    margin: 0;
-    font-size: 1rem;
-    line-height: 1.9;
-    color: #fff;
-    max-width: 540px;
-}
-
-.marshmallow-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 16px 32px;
-    border-radius: 999px;
-    background: linear-gradient(135deg, rgba(255, 183, 3, 0.95), rgba(255, 140, 0, 0.95));
-    color: #1a1a1a;
-    font-family: var(--ff-heading);
-    font-size: 1rem;
-    font-weight: 700;
-    text-decoration: none;
-    box-shadow: 0 8px 24px rgba(255, 183, 3, 0.28);
-    transition: var(--transition-smooth);
-    position: relative;
-    z-index: 1;
-}
-
-.marshmallow-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 28px rgba(255, 183, 3, 0.38);
-    filter: brightness(1.03);
-}
-
-.marshmallow-button:active {
-    transform: translateY(-1px);
-}
-
-.marshmallow-button i {
-    font-size: 1rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .marshmallow-text {
-        font-size: 0.95rem;
-        line-height: 1.8;
-    }
-
-    .marshmallow-button {
-        width: 100%;
-        max-width: 320px;
-        padding: 15px 24px;
-        font-size: 0.95rem;
-    }
-}
 
 /* Gallery Section */
 .gallery-container {
@@ -621,6 +553,95 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/* Marshmallow Section */
+.marshmallow-section {
+    text-align: center;
+}
+
+.marshmallow-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.marshmallow-note {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    letter-spacing: 0.04em;
+}
+
+.marshmallow-text {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #fff;
+    max-width: 540px;
+}
+
+.marshmallow-button,
+.marshmallow-button:link,
+.marshmallow-button:visited {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 32px;
+    margin-top: 6px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(255, 183, 3, 1), rgba(255, 145, 0, 1));
+    color: #2a1800;
+    font-family: var(--ff-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid rgba(255, 210, 120, 0.55);
+    box-shadow: 0 10px 28px rgba(255, 183, 3, 0.30);
+    transition: var(--transition-smooth);
+    position: relative;
+    z-index: 1;
+}
+
+.marshmallow-button:hover,
+.marshmallow-button:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px rgba(255, 183, 3, 0.40);
+    filter: brightness(1.04);
+    color: #2a1800;
+    text-decoration: none;
+}
+
+.marshmallow-button:active {
+    transform: translateY(-1px);
+}
+
+.marshmallow-button i {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .marshmallow-note {
+        font-size: 0.85rem;
+    }
+
+    .marshmallow-text {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+    .marshmallow-button,
+    .marshmallow-button:link,
+    .marshmallow-button:visited {
+        width: 100%;
+        max-width: 320px;
+        padding: 15px 24px;
+        font-size: 0.95rem;
+    }
 }
 
 
